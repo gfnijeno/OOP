@@ -1,0 +1,132 @@
+import java.util.Scanner;
+
+public class Main {
+    String IDNumber;
+    String firstName;
+    String lastName;
+    String studentType;
+    String courseName;
+    int x;
+    int y;
+    int z = x + y;
+
+    public Main(int tuition, int misc){
+        x = tuition;
+        y = misc;
+        z = tuition + misc;
+    }
+    public static void main(String[] args) throws Exception {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("ID Number: ");
+        String IDNumber = sc.nextLine();
+
+        System.out.print("First Name: ");
+        String firstName = sc.nextLine();
+
+        System.out.print("Last Name: ");
+        String lastName = sc.nextLine();
+
+        System.out.print("Student Type: ");
+        String studentType = sc.nextLine();
+
+        System.out.print("Course Name: ");
+        String courseName = sc.nextLine();
+
+        Main tourism = new Main(10000, 22500);
+        Main comsci = new Main(20000, 25000);
+        Main eng = new Main(30000, 25000);
+        Main nursing = new Main(15600, 15000);
+        Main archi = new Main(25000, 23000);
+        
+        if (courseName.equals("Tourism")){
+            if (studentType.equals("Walk-in")){
+                System.out.println("Total Fees (Computation): Php " + tourism.z);
+            }
+            else if (studentType.equals("Discounted (Gold)")){
+                System.out.println("Total Fees (Computation): Php " + (tourism.z - (tourism.z * 0.50)));
+            }
+            else if (studentType.equals("Discounted (Blue)")){
+                System.out.println("Total Fees (Computation): Php " + (tourism.z - (tourism.z * 0.25)));
+            }
+            else if (studentType.equals("Discounted (White)")){
+                System.out.println("Total Fees (Computation): Php " + (tourism.z - (tourism.z * 0.1)));
+            }
+            else if (studentType.equals("Continuing")){
+                System.out.println("Total Fees (Computation): Php " + (tourism.x - (tourism.x * 0.1) + tourism.y));
+            }
+        }
+        else if (courseName.equals("Computer Science")){
+            if (studentType.equals("Walk-in")){
+                System.out.println("Total Fees (Computation): Php " + comsci.z);
+            }
+            else if (studentType.equals("Discounted (Gold)")){
+                System.out.println("Total Fees (Computation): Php " + (comsci.z - (comsci.z * 0.50)));
+            }
+            else if (studentType.equals("Discounted (Blue)")){
+                System.out.println("Total Fees (Computation): Php " + (comsci.z - (comsci.z * 0.25)));
+            }
+            else if (studentType.equals("Discounted (White)")){
+                System.out.println("Total Fees (Computation): Php " + (comsci.z - (comsci.z * 0.1)));
+            }
+            else if (studentType.equals("Continuing")){
+                System.out.println("Total Fees (Computation): Php " + (comsci.x - (comsci.x * 0.1) + comsci.y));
+            }
+        }
+        else if (courseName.equals("Engineering")){
+            if (studentType.equals("Walk-in")){
+                System.out.println("Total Fees (Computation): Php " + eng.z);
+            }
+            else if (studentType.equals("Discounted (Gold)")){
+                System.out.println("Total Fees (Computation): Php " + (eng.z - (eng.z * 0.50)));
+            }
+            else if (studentType.equals("Discounted (Blue)")){
+                System.out.println("Total Fees (Computation): Php " + (eng.z - (eng.z * 0.25)));
+            }
+            else if (studentType.equals("Discounted (White)")){
+                System.out.println("Total Fees (Computation): Php " + (eng.z - (eng.z * 0.1)));
+            }
+            else if (studentType.equals("Continuing")){
+                System.out.println("Total Fees (Computation): Php " + (eng.x - (eng.x * 0.1) + eng.y));
+            }
+        }
+        else if (courseName.equals("Nursing")){
+            if (studentType.equals("Walk-in")){
+                System.out.println("Total Fees (Computation): Php " + nursing.z);
+            }
+            else if (studentType.equals("Discounted (Gold)")){
+                System.out.println("Total Fees (Computation): Php " + (nursing.z - (nursing.z * 0.50)));
+            }
+            else if (studentType.equals("Discounted (Blue)")){
+                System.out.println("Total Fees (Computation): Php " + (nursing.z - (nursing.z * 0.25)));
+            }
+            else if (studentType.equals("Discounted (White)")){
+                System.out.println("Total Fees (Computation): Php " + (nursing.z - (nursing.z * 0.1)));
+            }
+            else if (studentType.equals("Continuing")){
+                System.out.println("Total Fees (Computation): Php " + (nursing.x - (nursing.x * 0.1) + nursing.y));
+            }
+        }
+        else if (courseName.equals("Architecture")){
+            if (studentType.equals("Walk-in")){
+                System.out.println("Total Fees (Computation): Php " + archi.z);
+            }
+            else if (studentType.equals("Discounted (Gold)")){
+                System.out.println("Total Fees (Computation): Php " + (archi.z - (archi.z * 0.50)));
+            }
+            else if (studentType.equals("Discounted (Blue)")){
+                System.out.println("Total Fees (Computation): Php " + (archi.z - (archi.z * 0.25)));
+            }
+            else if (studentType.equals("Discounted (White)")){
+                System.out.println("Total Fees (Computation): Php " + (archi.z - (archi.z * 0.1)));
+            }
+            else if (studentType.equals("Continuing")){
+                System.out.println("Total Fees (Computation): Php " + (archi.x - (archi.x * 0.1) + archi.y));
+            }
+        }
+        else{
+            System.out.println("Invalid Course");
+        }
+        sc.close();
+    }
+}
