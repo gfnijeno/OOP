@@ -46,10 +46,10 @@ public class Main {
             else if (studentType.equals("Discounted (Gold)")){
                 System.out.println("Total Fees (Computation): Php " + (tourism.z - (tourism.z * 0.50)));
             }
-            else if (studentType.equals("Discounted (Blue)")){
-                System.out.println("Total Fees (Computation): Php " + (tourism.z - (tourism.z * 0.25)));
-            }
             else if (studentType.equals("Discounted (White)")){
+                System.out.println("Total Fees (Computation): Php " + (tourism.z - (tourism.z * 0.3)));
+            }
+            else if (studentType.equals("Discounted (Blue)")){
                 System.out.println("Total Fees (Computation): Php " + (tourism.z - (tourism.z * 0.1)));
             }
             else if (studentType.equals("Continuing")){
@@ -63,10 +63,10 @@ public class Main {
             else if (studentType.equals("Discounted (Gold)")){
                 System.out.println("Total Fees (Computation): Php " + (comsci.z - (comsci.z * 0.50)));
             }
-            else if (studentType.equals("Discounted (Blue)")){
-                System.out.println("Total Fees (Computation): Php " + (comsci.z - (comsci.z * 0.25)));
-            }
             else if (studentType.equals("Discounted (White)")){
+                System.out.println("Total Fees (Computation): Php " + (comsci.z - (comsci.z * 0.3)));
+            }
+            else if (studentType.equals("Discounted (Blue)")){
                 System.out.println("Total Fees (Computation): Php " + (comsci.z - (comsci.z * 0.1)));
             }
             else if (studentType.equals("Continuing")){
@@ -80,10 +80,10 @@ public class Main {
             else if (studentType.equals("Discounted (Gold)")){
                 System.out.println("Total Fees (Computation): Php " + (eng.z - (eng.z * 0.50)));
             }
-            else if (studentType.equals("Discounted (Blue)")){
-                System.out.println("Total Fees (Computation): Php " + (eng.z - (eng.z * 0.25)));
-            }
             else if (studentType.equals("Discounted (White)")){
+                System.out.println("Total Fees (Computation): Php " + (eng.z - (eng.z * 0.3)));
+            }
+            else if (studentType.equals("Discounted (Blue)")){
                 System.out.println("Total Fees (Computation): Php " + (eng.z - (eng.z * 0.1)));
             }
             else if (studentType.equals("Continuing")){
@@ -97,10 +97,10 @@ public class Main {
             else if (studentType.equals("Discounted (Gold)")){
                 System.out.println("Total Fees (Computation): Php " + (nursing.z - (nursing.z * 0.50)));
             }
-            else if (studentType.equals("Discounted (Blue)")){
-                System.out.println("Total Fees (Computation): Php " + (nursing.z - (nursing.z * 0.25)));
-            }
             else if (studentType.equals("Discounted (White)")){
+                System.out.println("Total Fees (Computation): Php " + (nursing.z - (nursing.z * 0.3)));
+            }
+            else if (studentType.equals("Discounted (Blue)")){
                 System.out.println("Total Fees (Computation): Php " + (nursing.z - (nursing.z * 0.1)));
             }
             else if (studentType.equals("Continuing")){
@@ -114,10 +114,10 @@ public class Main {
             else if (studentType.equals("Discounted (Gold)")){
                 System.out.println("Total Fees (Computation): Php " + (archi.z - (archi.z * 0.50)));
             }
-            else if (studentType.equals("Discounted (Blue)")){
-                System.out.println("Total Fees (Computation): Php " + (archi.z - (archi.z * 0.25)));
-            }
             else if (studentType.equals("Discounted (White)")){
+                System.out.println("Total Fees (Computation): Php " + (archi.z - (archi.z * 0.3)));
+            }
+            else if (studentType.equals("Discounted (Blue)")){
                 System.out.println("Total Fees (Computation): Php " + (archi.z - (archi.z * 0.1)));
             }
             else if (studentType.equals("Continuing")){
